@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+    <title>Gossip Group</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="chat_section">
+       <div class="brand-head">
+        <img  height="40" src="/gossip.png" alt="gossip" srcset="">
+          <div style="display: flex; justify-content: space-between; width:70vw; align-items: center; ">
+           <h1 class="logoname">Gossip Group</h1>
+           <h1 id="onlineUser"></h1> 
+           <div style="display: flex; align-items: center; " id="popup">
+            <img src="/user-group.png"  height="30" alt="">
+            <h1 id="userNum"> </h1>
+           </div>
+          </div>
+       </div>
+      <div class="mssg-area"></div>
+      <div>
+        <textarea name="" id="textarea" cols="30" rows="1" placeholder="write message here "></textarea>
+      </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
+
+
+
+<!-- isko mssg-area se htya hai kyo ki ab ye dynamically add ho jayega through js-->
+
+
+ <!-- <div class="mssg incoming"> 
+  <h4>Rakesh</h4>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo voluptatum aperiam.</p>
+</div>
+<div class="mssg outgoing"> 
+  <h4>Rakesh</h4>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate explicabo voluptatum aperiam.</p>
+</div> -->
